@@ -5,58 +5,113 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Numo — Account & Data Deletion</title>
     <style>
+        :root {
+            --brand: #FF7F50;
+            --brand-pressed: #F2683A;
+            --brand-shadow: rgba(255, 127, 80, 0.15);
+
+            --bg: #D6DBD2;
+            --surface: #FFFFFF;
+            --header: #E6EAE4;
+            --badge: #E6E3DC;
+
+            --text: #2F2F2F;
+            --text-sub: #3D3D3D;
+            --text-secondary: #4B4B4B;
+            --muted: #6A6A6A;
+
+            --border: rgba(0,0,0,0.06);
+            --divider: rgba(0,0,0,0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #262624;
+                --surface: #30302E;
+                --header: #3D3D3B;
+                --badge: #3D3D3B;
+
+                --text: #F5F5F5;
+                --text-sub: #D2D2CE;
+                --text-secondary: #AFAEA8;
+                --muted: #7A7975;
+
+                --border: rgba(255,255,255,0.06);
+                --divider: rgba(255,255,255,0.10);
+
+                --brand-shadow: rgba(255, 127, 80, 0.15);
+            }
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
             margin: 0;
-            background:#0b0b0c;
-            color:#ffffff;
+            background: var(--bg);
+            color: var(--text);
         }
+
         .wrap {
             max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
+
         a {
-            color: #9ad1ff;
+            color: var(--brand);
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+
         h1 {
             margin: 14px 0 8px;
             font-size: 28px;
+            color: var(--text);
         }
+
         h2 {
             margin-top: 28px;
             font-size: 20px;
+            color: var(--text-sub);
         }
+
         p, li {
             line-height: 1.65;
-            opacity: 0.92;
+            color: var(--text-secondary);
         }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
         .card {
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.12);
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 20px;
             margin-top: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
+
         .button {
             display: inline-block;
             margin-top: 14px;
             padding: 12px 22px;
-            background: #ff5c5c;
+            background: var(--brand);
             color: #ffffff;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             text-decoration: none;
+            box-shadow: 0 10px 24px var(--brand-shadow);
         }
         .button:hover {
-            background: #ff3b3b;
+            background: var(--brand-pressed);
+            text-decoration: none;
         }
+
         .muted {
-            opacity: 0.7;
+            color: var(--muted);
             font-size: 14px;
             margin-top: 18px;
         }
@@ -65,7 +120,7 @@
 <body>
 <div class="wrap">
 
-    <a href="/index.html">← Back</a>
+    <a href="/">← Back</a>
 
     <h1>Account & Data Deletion</h1>
 
@@ -125,6 +180,15 @@
             We do not retain personal data after account deletion except where required
             to comply with legal obligations (such as fraud prevention, security,
             or accounting requirements).
+        </p>
+    </div>
+
+    <div class="card">
+        <p class="muted">
+            Quick links:
+            <a href="/privacy">Privacy</a> ·
+            <a href="/terms">Terms</a> ·
+            <a href="/support">Support</a>
         </p>
     </div>
 

@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Numo — Legal</title>
+    <title>Numo — Support</title>
     <style>
         :root {
-            /* Brand */
             --brand: #FF7F50;
             --brand-pressed: #F2683A;
             --brand-shadow: rgba(255, 127, 80, 0.15);
 
-            /* LightTheme */
             --bg: #D6DBD2;
             --surface: #FFFFFF;
             --header: #E6EAE4;
@@ -28,7 +26,6 @@
 
         @media (prefers-color-scheme: dark) {
             :root {
-                /* DarkTheme */
                 --bg: #262624;
                 --surface: #30302E;
                 --header: #3D3D3B;
@@ -68,19 +65,14 @@
         }
 
         h1 {
-            margin: 0 0 10px;
+            margin: 14px 0 8px;
             font-size: 28px;
             color: var(--text);
         }
 
-        p {
-            line-height: 1.6;
+        p, li {
+            line-height: 1.65;
             color: var(--text-secondary);
-        }
-
-        ul {
-            line-height: 1.8;
-            padding-left: 20px;
         }
 
         .card {
@@ -91,31 +83,24 @@
             margin-top: 16px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
-
-        .muted {
-            color: var(--muted);
-            font-size: 13px;
-            margin-top: 18px;
-        }
     </style>
 </head>
 <body>
 <div class="wrap">
-    <h1>Numo — Legal</h1>
-    <p>Legal pages for the Numo mobile app (expense & spending tracker).</p>
+    <a href="/">← Back</a>
+    <h1>Support</h1>
 
     <div class="card">
-        <ul>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/support">Support</a></li>
-            <li><a href="/account-deletion">Account Deletion</a></li>
-        </ul>
-        <p class="muted">
-            Owner: Artur Fedichkin (Individual / FOP, Ukraine). Contact:
-            <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a>
+        <p><strong>Email:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
+        <p><strong>In-app support chat:</strong> Available inside the app Settings. You can send messages and optionally attach an image.</p>
+        <p>
+            Support messages and attachments are used only to respond to your request and improve support experience.
         </p>
     </div>
+
+    <p>
+        Please include: device model, OS version, app version, and steps to reproduce (if applicable).
+    </p>
 </div>
 </body>
 </html>

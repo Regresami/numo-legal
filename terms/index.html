@@ -5,23 +5,123 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Numo — Terms of Use</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#0b0b0c; color:#fff; }
-        .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        a { color: #9ad1ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .top { display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
-        .badge { display:inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); font-size: 12px; opacity: 0.9; }
-        h1 { margin: 14px 0 8px; font-size: 28px; }
-        h2 { margin: 26px 0 10px; font-size: 18px; }
-        p, li { line-height: 1.65; opacity: 0.92; }
-        .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 18px; margin-top: 16px; }
-        .muted { opacity: 0.7; font-size: 13px; }
+        :root {
+            --brand: #FF7F50;
+            --brand-pressed: #F2683A;
+            --brand-shadow: rgba(255, 127, 80, 0.15);
+
+            --bg: #D6DBD2;
+            --surface: #FFFFFF;
+            --header: #E6EAE4;
+            --badge: #E6E3DC;
+
+            --text: #2F2F2F;
+            --text-sub: #3D3D3D;
+            --text-secondary: #4B4B4B;
+            --muted: #6A6A6A;
+
+            --border: rgba(0,0,0,0.06);
+            --divider: rgba(0,0,0,0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #262624;
+                --surface: #30302E;
+                --header: #3D3D3B;
+                --badge: #3D3D3B;
+
+                --text: #F5F5F5;
+                --text-sub: #D2D2CE;
+                --text-secondary: #AFAEA8;
+                --muted: #7A7975;
+
+                --border: rgba(255,255,255,0.06);
+                --divider: rgba(255,255,255,0.10);
+
+                --brand-shadow: rgba(255, 127, 80, 0.15);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .top {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--badge);
+            border: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        h1 {
+            margin: 14px 0 8px;
+            font-size: 28px;
+            color: var(--text);
+        }
+
+        h2 {
+            margin: 26px 0 10px;
+            font-size: 18px;
+            color: var(--text-sub);
+        }
+
+        p, li {
+            line-height: 1.65;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px;
+            margin-top: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
 <div class="wrap">
     <div class="top">
-        <a href="/index.html">← Back</a>
+        <a href="/">← Back</a>
         <span class="badge">Last updated: 2026-02-27</span>
     </div>
 
@@ -33,8 +133,8 @@
 
     <div class="card">
         <p><strong>Owner:</strong> Artur Fedichkin (Individual / FOP), Ukraine</p>
-        <p><strong>Contact:</strong> <a href="mailto:fedichkin.artur@gmail.com">fedichkin.artur@gmail.com</a></p>
-        <p class="muted">Privacy Policy: <a href="/privacy.html">privacy.html</a></p>
+        <p><strong>Contact:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
+        <p class="muted">Privacy Policy: <a href="/privacy">Privacy Policy</a></p>
     </div>
 
     <h2>1) The service</h2>
@@ -104,7 +204,7 @@
 
     <div class="card">
         <p class="muted">
-            Quick links: <a href="/privacy.html">Privacy</a> · <a href="/support.html">Support</a> · <a href="/account-deletion.html">Account Deletion</a>
+            Quick links: <a href="/privacy">Privacy</a> · <a href="/support">Support</a> · <a href="/account-deletion">Account Deletion</a>
         </p>
     </div>
 </div>
