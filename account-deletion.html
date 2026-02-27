@@ -3,37 +3,130 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Numo — Account Deletion</title>
+    <title>Numo — Account & Data Deletion</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#0b0b0c; color:#fff; }
-        .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        a { color: #9ad1ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        h1 { margin: 14px 0 8px; font-size: 28px; }
-        p, li { line-height: 1.65; opacity: 0.92; }
-        .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 18px; margin-top: 16px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            background:#0b0b0c;
+            color:#ffffff;
+        }
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        a {
+            color: #9ad1ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            margin: 14px 0 8px;
+            font-size: 28px;
+        }
+        h2 {
+            margin-top: 28px;
+            font-size: 20px;
+        }
+        p, li {
+            line-height: 1.65;
+            opacity: 0.92;
+        }
+        .card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 18px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 22px;
+            background: #ff5c5c;
+            color: #ffffff;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: #ff3b3b;
+        }
+        .muted {
+            opacity: 0.7;
+            font-size: 14px;
+            margin-top: 18px;
+        }
     </style>
 </head>
 <body>
 <div class="wrap">
+
     <a href="/index.html">← Back</a>
-    <h1>Account Deletion</h1>
+
+    <h1>Account & Data Deletion</h1>
+
+    <p>
+        This page explains how you can delete your Numo account and associated data.
+    </p>
 
     <div class="card">
-        <p><strong>Delete your account in the app:</strong></p>
+        <h2>Delete Your Account in the App</h2>
         <ol>
-            <li>Open Numo</li>
+            <li>Open the Numo app</li>
             <li>Go to <strong>Settings</strong></li>
-            <li>Select <strong>Delete account</strong> and confirm</li>
+            <li>Select <strong>Delete Account</strong></li>
+            <li>Confirm the deletion</li>
         </ol>
         <p>
-            This action is intended to remove your account and associated stored data from our servers.
+            When you delete your account from within the app, your account and associated stored data are permanently removed from our servers.
         </p>
     </div>
 
-    <p>
-        Need help? Contact <a href="mailto:fedichkin.artur@gmail.com">fedichkin.artur@gmail.com</a>.
+    <div class="card">
+        <h2>Request Account Deletion by Email</h2>
+        <p>
+            If you cannot access the app or would like to submit a manual deletion request,
+            you may contact us directly.
+        </p>
+
+        <a class="button"
+           href="mailto:http://numo.app.contact/@gmail.com?subject=Numo%20Account%20Deletion%20Request">
+            Request Account Deletion
+        </a>
+
+        <p class="muted">
+            Please send the request from the email address associated with your Numo account
+            to help us verify ownership.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>What Data Is Deleted</h2>
+        <p>
+            Upon account deletion, we permanently remove:
+        </p>
+        <ul>
+            <li>Your account information (email, user ID)</li>
+            <li>Your expense and income records</li>
+            <li>Uploaded receipt images</li>
+            <li>Associated profile data</li>
+        </ul>
+
+        <p>
+            Certain minimal records may be retained only if required for legal, accounting,
+            or security purposes, in accordance with applicable laws.
+        </p>
+    </div>
+
+    <p class="muted">
+        Owner: Artur Fedichkin — Numo App<br>
+        Contact: fedichkin.artur@gmail.com
     </p>
+
 </div>
 </body>
 </html>
