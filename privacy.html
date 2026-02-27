@@ -1,14 +1,155 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Privacy Policy - Numo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Numo — Privacy Policy</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#0b0b0c; color:#fff; }
+        .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        a { color: #9ad1ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .top { display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+        .badge { display:inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); font-size: 12px; opacity: 0.9; }
+        h1 { margin: 14px 0 8px; font-size: 28px; }
+        h2 { margin: 26px 0 10px; font-size: 18px; }
+        p, li { line-height: 1.65; opacity: 0.92; }
+        .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 18px; margin-top: 16px; }
+        .muted { opacity: 0.7; font-size: 13px; }
+        code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 8px; }
+    </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>Last updated: February 2026</p>
+<div class="wrap">
+    <div class="top">
+        <a href="/index.html">← Back</a>
+        <span class="badge">Last updated: 2026-02-27</span>
+    </div>
 
-<p>Numo uses the camera to scan receipts.</p>
-<p>Images may be processed via AI services to extract data.</p>
-<p>We do not sell personal data.</p>
+    <h1>Privacy Policy</h1>
+    <p>
+        This Privacy Policy explains how Numo (“we”, “us”, “our”) collects, uses, stores, and protects information when you use the Numo mobile app
+        (an expense & spending tracker with optional features like scanning an expense image to speed up data entry).
+    </p>
+
+    <div class="card">
+        <p><strong>Owner / Controller:</strong> Artur Fedichkin (Individual / FOP), Ukraine</p>
+        <p><strong>Contact:</strong> <a href="mailto:fedichkin.artur@gmail.com">fedichkin.artur@gmail.com</a></p>
+        <p class="muted">
+            If you contact support via in-app chat, your messages and attachments are processed to help you with your request.
+        </p>
+    </div>
+
+    <h2>1) What Numo is (and isn’t)</h2>
+    <ul>
+        <li>Numo helps you record and analyze personal expenses/spending (and optionally income) and view statistics.</li>
+        <li>Numo does <strong>not</strong> provide financial advice, investment advice, tax advice, or professional recommendations.</li>
+    </ul>
+
+    <h2>2) Account & authentication</h2>
+    <ul>
+        <li>You can create an account and sign in using Supabase authentication (email/password and supported identity providers).</li>
+        <li>Email verification is not required.</li>
+        <li>Password reset (“Forgot password”) is performed via email.</li>
+    </ul>
+
+    <h2>3) Data you provide</h2>
+    <p>When you use Numo, you may provide:</p>
+    <ul>
+        <li><strong>Account data:</strong> email (and authentication identifiers).</li>
+        <li><strong>Financial records you enter or generate:</strong> expenses, amounts, currencies, dates, categories, notes, merchant names, etc.</li>
+        <li><strong>Images you choose to upload:</strong>
+            e.g., an image of an expense document/photo that you select to help you create an expense entry faster.
+            Images are stored <strong>only</strong> for your convenience (so you can view and verify them later inside your own account).
+        </li>
+        <li><strong>Support messages:</strong> text you send via in-app support chat and optional attachments you choose to add.</li>
+    </ul>
+
+    <h2>4) Camera / Photos</h2>
+    <ul>
+        <li><strong>Camera</strong>: used only if you choose to capture an expense image within the app.</li>
+        <li><strong>Photo Library</strong>: used only if you choose an existing image from your device for creating an expense entry.</li>
+        <li>
+            You may choose not to save an expense after previewing the result—in that case, the app is designed not to store that expense record (and associated image) on our servers.
+        </li>
+    </ul>
+
+    <h2>5) Where data is stored</h2>
+    <ul>
+        <li>Your account and expense data are stored in our backend (Supabase database).</li>
+        <li>Uploaded images and attachments are stored in our backend storage (Supabase Storage; other storage providers may be added later).</li>
+        <li>Your data is account-centric: signing into the same account on another device shows the same data.</li>
+    </ul>
+
+    <h2>6) Who can see your data</h2>
+    <ul>
+        <li><strong>Only you</strong> (the account owner) can access your expenses and uploaded images inside the app.</li>
+        <li>Numo has <strong>no</strong> public profiles, no social features, and no user-to-user interactions.</li>
+        <li>We do not display your personal data to other users.</li>
+    </ul>
+
+    <h2>7) How we use data</h2>
+    <p>We use your data to:</p>
+    <ul>
+        <li>Provide core functionality (store your expenses, show history and statistics).</li>
+        <li>Process optional features you initiate (e.g., extracting expense details from an image you selected).</li>
+        <li>Provide support (respond in in-app chat and/or email).</li>
+        <li>Maintain security, prevent abuse, and operate the service.</li>
+    </ul>
+
+    <h2>8) Sharing & third parties</h2>
+    <p>
+        We use third-party services to operate the app. Depending on the feature you use, your data may be processed by:
+    </p>
+    <ul>
+        <li><strong>Supabase</strong> (authentication, database, storage, server-side functions).</li>
+        <li><strong>AI processing providers</strong> (used only to perform features you initiate, such as extracting expense details from an image). This may include providers such as OpenAI and/or Google/Azure-based OCR/AI services.</li>
+        <li><strong>RevenueCat</strong> (subscription and entitlement management).</li>
+        <li><strong>Apple App Store / Google Play</strong> (payments and subscription transactions via the stores).</li>
+        <li><strong>Analytics (planned)</strong>: we may add product analytics later to understand feature usage and improve the app. If added, we will update this Privacy Policy and the store disclosures accordingly.</li>
+    </ul>
+    <p class="muted">
+        We do not sell your personal data. We do not share your data with other users.
+    </p>
+
+    <h2>9) Subscriptions & purchases</h2>
+    <ul>
+        <li>Numo may offer a Pro subscription and a free trial experience.</li>
+        <li>Purchases are handled via Apple App Store / Google Play, with RevenueCat used for entitlement synchronization.</li>
+    </ul>
+
+    <h2>10) Data retention</h2>
+    <ul>
+        <li>We keep your data as long as your account remains active, or as needed to provide the service.</li>
+        <li>You can delete individual expenses (and associated images where applicable) inside the app.</li>
+        <li>You can delete your entire account inside the app; this is intended to remove your account data from our servers.</li>
+    </ul>
+
+    <h2>11) Account deletion requests</h2>
+    <p>
+        You can delete your account from within the app settings. If you need assistance, contact
+        <a href="mailto:fedichkin.artur@gmail.com">fedichkin.artur@gmail.com</a>.
+        See also: <a href="/account-deletion.html">Account Deletion</a>.
+    </p>
+
+    <h2>12) Security</h2>
+    <p>
+        We use reasonable technical and organizational measures to protect your data. However, no system can be 100% secure.
+    </p>
+
+    <h2>13) Children</h2>
+    <p>Numo is not intended for children. Please do not use Numo if you are under the minimum age required in your country.</p>
+
+    <h2>14) Changes to this policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new “Last updated” date.
+    </p>
+
+    <div class="card">
+        <p class="muted">
+            Quick links: <a href="/terms.html">Terms</a> · <a href="/support.html">Support</a> · <a href="/account-deletion.html">Account Deletion</a>
+        </p>
+    </div>
+</div>
 </body>
 </html>
