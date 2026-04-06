@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Numo — Legal</title>
+    <title>Numo — Legal & Support</title>
     <style>
         :root {
-            /* Brand */
             --brand: #FF7F50;
             --brand-pressed: #F2683A;
             --brand-shadow: rgba(255, 127, 80, 0.15);
 
-            /* LightTheme */
             --bg: #D6DBD2;
             --surface: #FFFFFF;
             --header: #E6EAE4;
@@ -28,7 +26,6 @@
 
         @media (prefers-color-scheme: dark) {
             :root {
-                /* DarkTheme */
                 --bg: #262624;
                 --surface: #30302E;
                 --header: #3D3D3B;
@@ -63,24 +60,43 @@
             color: var(--brand);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
 
+        .top {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--badge);
+            border: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
         h1 {
-            margin: 0 0 10px;
+            margin: 14px 0 8px;
             font-size: 28px;
             color: var(--text);
         }
 
-        p {
-            line-height: 1.6;
+        p, li {
+            line-height: 1.65;
             color: var(--text-secondary);
         }
 
         ul {
-            line-height: 1.8;
             padding-left: 20px;
+            margin: 0;
         }
 
         .card {
@@ -95,25 +111,34 @@
         .muted {
             color: var(--muted);
             font-size: 13px;
-            margin-top: 18px;
         }
     </style>
 </head>
 <body>
 <div class="wrap">
-    <h1>Numo — Legal</h1>
-    <p>Legal pages for the Numo mobile app (expense & spending tracker).</p>
+    <div class="top">
+        <span class="badge">Numo</span>
+    </div>
+
+    <h1>Legal & Support</h1>
+    <p>
+        This page provides legal, privacy, account deletion, and support information for the Numo mobile application.
+    </p>
 
     <div class="card">
         <ul>
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/terms">Terms of Use</a></li>
             <li><a href="/support">Support</a></li>
-            <li><a href="/account-deletion">Account Deletion</a></li>
+            <li><a href="/account-deletion">Account &amp; Data Deletion</a></li>
         </ul>
+    </div>
+
+    <div class="card">
+        <p><strong>Owner:</strong> Artur Fedichkin (Individual / FOP), Ukraine</p>
+        <p><strong>Contact:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
         <p class="muted">
-            Owner: Artur Fedichkin (Individual / FOP, Ukraine). Contact:
-            <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a>
+            Numo is a personal expense and spending tracking app with optional receipt scanning, AI-assisted processing, and subscription features.
         </p>
     </div>
 </div>

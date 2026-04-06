@@ -60,8 +60,27 @@
             color: var(--brand);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        .top {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--badge);
+            border: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-secondary);
         }
 
         h1 {
@@ -70,9 +89,19 @@
             color: var(--text);
         }
 
+        h2 {
+            margin: 26px 0 10px;
+            font-size: 18px;
+            color: var(--text-sub);
+        }
+
         p, li {
             line-height: 1.65;
             color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         .card {
@@ -83,24 +112,67 @@
             margin-top: 16px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
+
+        .muted {
+            color: var(--muted);
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
 <div class="wrap">
-    <a href="/">← Back</a>
-    <h1>Support</h1>
-
-    <div class="card">
-        <p><strong>Email:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
-        <p><strong>In-app support chat:</strong> Available inside the app Settings. You can send messages and optionally attach an image.</p>
-        <p>
-            Support messages and attachments are used only to respond to your request and improve support experience.
-        </p>
+    <div class="top">
+        <a href="/">← Back</a>
+        <span class="badge">Support</span>
     </div>
 
+    <h1>Support</h1>
     <p>
-        Please include: device model, OS version, app version, and steps to reproduce (if applicable).
+        If you need help with Numo, you can contact support by email or through the in-app support chat.
     </p>
+
+    <div class="card">
+        <p><strong>Support email:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
+        <p><strong>In-app support chat:</strong> Available inside the Numo app for signed-in users.</p>
+        <p><strong>Response time:</strong> We aim to respond within a reasonable time, usually within 7 business days.</p>
+    </div>
+
+    <h2>How to contact support</h2>
+    <ul>
+        <li><strong>Email:</strong> you can send us a message directly using the support email listed above.</li>
+        <li><strong>In-app support chat:</strong> if you are signed in, you can contact us from within the app and continue the conversation there.</li>
+    </ul>
+
+    <h2>What to include in your message</h2>
+    <p>To help us investigate your issue faster, please include as much relevant detail as possible, such as:</p>
+    <ul>
+        <li>device model;</li>
+        <li>operating system and version;</li>
+        <li>app version;</li>
+        <li>a short description of the issue;</li>
+        <li>steps to reproduce the issue, if applicable;</li>
+        <li>screenshots or attachments, if they help explain the problem.</li>
+    </ul>
+
+    <h2>Support messages and attachments</h2>
+    <ul>
+        <li>If you contact us through the in-app support chat, your support messages and any attachments you choose to send may be stored and processed in order to respond to your request, investigate issues, and improve support operations.</li>
+        <li>If your account is deleted, support chat threads, support messages, and support attachments associated with your account are intended to be deleted as part of the account deletion process, subject to any limited retention described in our legal pages.</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <p>
+        Support is currently provided in English and may also be available in other languages at our discretion.
+    </p>
+
+    <div class="card">
+        <p class="muted">
+            Quick links:
+            <a href="/privacy">Privacy Policy</a> ·
+            <a href="/terms">Terms of Use</a> ·
+            <a href="/account-deletion">Account Deletion</a>
+        </p>
+    </div>
 </div>
 </body>
 </html>

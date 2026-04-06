@@ -6,12 +6,10 @@
     <title>Numo — Privacy Policy</title>
     <style>
         :root {
-            /* Brand */
             --brand: #FF7F50;
             --brand-pressed: #F2683A;
             --brand-shadow: rgba(255, 127, 80, 0.15);
 
-            /* LightTheme */
             --bg: #D6DBD2;
             --surface: #FFFFFF;
             --header: #E6EAE4;
@@ -28,7 +26,6 @@
 
         @media (prefers-color-scheme: dark) {
             :root {
-                /* DarkTheme */
                 --bg: #262624;
                 --surface: #30302E;
                 --header: #3D3D3B;
@@ -63,6 +60,7 @@
             color: var(--brand);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -139,130 +137,155 @@
 <div class="wrap">
     <div class="top">
         <a href="/">← Back</a>
-        <span class="badge">Last updated: 2026-02-27</span>
+        <span class="badge">Last updated: 2026-04-06</span>
     </div>
 
     <h1>Privacy Policy</h1>
     <p>
-        This Privacy Policy explains how Numo (“we”, “us”, “our”) collects, uses, stores, and protects information when you use the Numo mobile app.
+        This Privacy Policy explains how Numo (“Numo”, “we”, “us”, or “our”) collects, uses, stores, and protects information when you use the Numo mobile application and related support services.
     </p>
 
     <div class="card">
-        <p><strong>Owner / Controller:</strong> Artur Fedichkin (Individual), Ukraine</p>
+        <p><strong>Owner / Controller:</strong> Artur Fedichkin (Individual / FOP), Ukraine</p>
         <p><strong>Contact:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
-        <p class="muted">
-            If you contact support via in-app chat, your messages and attachments are processed to help you with your request.
-        </p>
     </div>
 
-    <h2>1) What Numo is (and isn’t)</h2>
+    <h2>1) What Numo is</h2>
     <ul>
-        <li>Numo helps you record and analyze personal expenses/spending (and optionally income) and view statistics.</li>
-        <li>Numo does <strong>not</strong> provide financial advice, investment advice, tax advice, or professional recommendations.</li>
+        <li>Numo is a personal expense and spending tracker that helps you record, organize, and review your financial records.</li>
+        <li>Numo may also support optional income tracking, receipt scanning, AI-assisted extraction, categorization, translation, summaries, and search features.</li>
+        <li>Numo is not a bank, payment provider, accountant, tax advisor, investment advisor, or other professional financial service.</li>
     </ul>
 
-    <h2>2) Account & authentication</h2>
+    <h2>2) Account types and authentication</h2>
+    <p>You may use Numo through one of the following account methods:</p>
     <ul>
-        <li>You can create an account and sign in using Supabase authentication (email/password and supported identity providers).</li>
-        <li>Email verification is not required.</li>
-        <li>Password reset (“Forgot password”) is performed via email.</li>
+        <li><strong>Anonymous account:</strong> you may start using the app without providing an email address.</li>
+        <li><strong>Email/password account</strong></li>
+        <li><strong>Sign in with Google</strong></li>
+        <li><strong>Sign in with Apple</strong></li>
     </ul>
-
-    <h2>3) Data you provide</h2>
-    <p>When you use Numo, you may provide:</p>
-    <ul>
-        <li><strong>Account data:</strong> email (and authentication identifiers).</li>
-        <li><strong>Financial records you enter or generate:</strong> expenses, amounts, currencies, dates, categories, notes, merchant names, etc.</li>
-        <li><strong>Images you choose to upload:</strong>
-            e.g., an image of an expense document/photo that you select to help you create an expense entry faster.
-            Images are stored <strong>only</strong> for your convenience (so you can view and verify them later inside your own account).
-        </li>
-        <li><strong>Support messages:</strong> text you send via in-app support chat and optional attachments you choose to add.</li>
-    </ul>
-
-    <h2>4) Camera / Photos</h2>
-    <ul>
-        <li><strong>Camera</strong>: used only if you choose to capture an expense image within the app.</li>
-        <li><strong>Photo Library</strong>: used only if you choose an existing image from your device for creating an expense entry.</li>
-        <li>
-            You may choose not to save an expense after previewing the result—in that case, the app is designed not to store that expense record (and associated image) on our servers.
-        </li>
-    </ul>
-
-    <h2>5) Where data is stored</h2>
-    <ul>
-        <li>Your account and expense data are stored in our backend (Supabase database).</li>
-        <li>Uploaded images and attachments are stored in our backend storage (Supabase Storage; other storage providers may be added later).</li>
-        <li>Your data is account-centric: signing into the same account on another device shows the same data.</li>
-    </ul>
-
-    <h2>6) Who can see your data</h2>
-    <ul>
-        <li><strong>Only you</strong> (the account owner) can access your expenses and uploaded images inside the app.</li>
-        <li>Numo has <strong>no</strong> public profiles, no social features, and no user-to-user interactions.</li>
-        <li>We do not display your personal data to other users.</li>
-    </ul>
-
-    <h2>7) How we use data</h2>
-    <p>We use your data to:</p>
-    <ul>
-        <li>Provide core functionality (store your expenses, show history and statistics).</li>
-        <li>Process optional features you initiate (e.g., extracting expense details from an image you selected).</li>
-        <li>Provide support (respond in in-app chat and/or email).</li>
-        <li>Maintain security, prevent abuse, and operate the service.</li>
-    </ul>
-
-    <h2>8) Sharing & third parties</h2>
     <p>
-        We use third-party services to operate the app. Depending on the feature you use, your data may be processed by:
-    </p>
-    <ul>
-        <li><strong>Supabase</strong> (authentication, database, storage, server-side functions).</li>
-        <li><strong>AI processing providers</strong> (used only to perform features you initiate, such as extracting expense details from an image). This may include providers such as OpenAI and/or Google/Azure-based OCR/AI services.</li>
-        <li><strong>RevenueCat</strong> (subscription and entitlement management).</li>
-        <li><strong>Apple App Store / Google Play</strong> (payments and subscription transactions via the stores).</li>
-        <li><strong>Analytics (planned)</strong>: we may add product analytics later to understand feature usage and improve the app. If added, we will update this Privacy Policy and the store disclosures accordingly.</li>
-    </ul>
-    <p class="muted">
-        We do not sell your personal data. We do not share your data with other users.
+        If you later link an authentication provider or email to an existing account, the linked login methods may be associated with the same account in order to preserve your data and access.
     </p>
 
-    <h2>9) Subscriptions & purchases</h2>
+    <h2>3) Information we collect</h2>
+    <p>Depending on how you use Numo, we may collect and process the following categories of information:</p>
     <ul>
-        <li>Numo may offer a Pro subscription and a free trial experience.</li>
-        <li>Purchases are handled via Apple App Store / Google Play, with RevenueCat used for entitlement synchronization.</li>
+        <li><strong>Account and authentication data:</strong> email address, authentication provider identifiers, internal user ID, and related account records.</li>
+        <li><strong>Financial records you create or generate in the app:</strong> expenses, income entries, prices, totals, currencies, categories, subcategories, notes, merchant names, dates, and related metadata.</li>
+        <li><strong>Receipt images and screenshots:</strong> images you choose to capture or upload for expense creation, receipt scanning, or related features.</li>
+        <li><strong>Support data:</strong> support chat messages, support email communications, and attachments you choose to send to us.</li>
+        <li><strong>Usage and diagnostics data:</strong> in-app event data, app diagnostics, crash information, and technical telemetry used to operate, monitor, and improve the service.</li>
+        <li><strong>Anti-abuse and trial-enforcement data:</strong> device-related identifiers and related records used to grant and enforce limited trial access and help prevent abuse of the service.</li>
+    </ul>
+
+    <h2>4) Camera and photo library access</h2>
+    <ul>
+        <li><strong>Camera:</strong> used only when you choose to capture a receipt image or screenshot source inside the app.</li>
+        <li><strong>Photo Library / Photos:</strong> used only when you choose to upload an existing image from your device.</li>
+    </ul>
+    <p>
+        If you preview a result and do not save it, we intend not to keep the corresponding expense or receipt record in your account.
+    </p>
+
+    <h2>5) How we use your information</h2>
+    <p>We use your information to:</p>
+    <ul>
+        <li>create and manage your account;</li>
+        <li>store and display your expenses, receipts, and related records across your signed-in devices;</li>
+        <li>process optional features that you initiate, including receipt scanning, OCR, AI-assisted extraction, categorization, translation, and search;</li>
+        <li>provide customer support and respond to support requests;</li>
+        <li>operate subscriptions, entitlements, and trial access;</li>
+        <li>monitor app reliability, detect bugs and crashes, improve product performance, and understand feature usage;</li>
+        <li>maintain security, prevent fraud or abuse, and enforce fair use of trial functionality.</li>
+    </ul>
+
+    <h2>6) AI and OCR processing</h2>
+    <p>
+        When you use receipt scanning, screenshot-based expense creation, AI-assisted categorization, translation, or related features, the content you submit for those features may be processed by external AI and OCR providers on our behalf.
+    </p>
+    <ul>
+        <li>Depending on the processing flow and fallback logic, submitted content may be processed by one or more of the providers listed in this policy.</li>
+        <li>This processing is used only to provide the feature you initiated, such as extracting structured receipt data, categorizing items, translating item names, or supporting AI-powered search.</li>
+        <li>We do not provide social sharing features or expose your uploaded receipt data to other users.</li>
+    </ul>
+
+    <h2>7) Service providers and third parties</h2>
+    <p>We use third-party services to operate Numo. These may include:</p>
+    <ul>
+        <li><strong>Supabase:</strong> authentication, database, storage, and backend functions.</li>
+        <li><strong>OpenAI:</strong> AI processing for supported app features.</li>
+        <li><strong>Microsoft Azure:</strong> OCR and/or AI processing for supported app features.</li>
+        <li><strong>Google Vision and Gemini:</strong> OCR, AI processing, and AI-assisted search for supported app features.</li>
+        <li><strong>RevenueCat:</strong> subscription and entitlement management.</li>
+        <li><strong>Apple App Store and Google Play:</strong> payment and subscription transactions handled through the relevant app store.</li>
+        <li><strong>Sentry:</strong> crash reporting, diagnostics, and app reliability monitoring.</li>
+        <li><strong>PostHog:</strong> product analytics and event measurement.</li>
+    </ul>
+
+    <h2>8) Analytics and diagnostics</h2>
+    <p>
+        We use analytics and diagnostics tools to understand app performance, measure feature usage, and detect errors.
+    </p>
+    <ul>
+        <li><strong>PostHog</strong> may receive app event data and internal identifiers associated with app activity.</li>
+        <li><strong>Sentry</strong> may receive crash, error, diagnostic, and technical context data needed to help us detect and fix reliability issues.</li>
+        <li>We do not intentionally send your email address, receipt contents, support message contents, or other directly readable personal financial details to PostHog for routine product analytics.</li>
+    </ul>
+
+    <h2>9) How your data is shared</h2>
+    <ul>
+        <li>We do <strong>not</strong> sell your personal data.</li>
+        <li>We do <strong>not</strong> make your data visible to other users.</li>
+        <li>We share data only as needed to operate the app, process the features you request, provide support, handle subscriptions, run analytics/diagnostics, comply with law, or protect the service.</li>
     </ul>
 
     <h2>10) Data retention</h2>
     <ul>
-        <li>We keep your data as long as your account remains active, or as needed to provide the service.</li>
-        <li>You can delete individual expenses (and associated images where applicable) inside the app.</li>
-        <li>You can delete your entire account inside the app; this is intended to remove your account data from our servers.</li>
+        <li>Your account data, financial records, uploaded receipt images, and support records are generally kept until you delete them, delete your account, or they are no longer required for the service.</li>
+        <li>Receipt images may remain stored so they can stay attached to the related receipt records in your account.</li>
+        <li>You may remove receipt-related data by deleting the related receipt or by deleting your account.</li>
+        <li>Support chat messages and support attachments may remain stored until your account is deleted or the support record is otherwise removed in our systems.</li>
     </ul>
 
-    <h2>11) Account deletion requests</h2>
+    <h2>11) Account deletion and what may be retained</h2>
     <p>
-        You can delete your account from within the app settings. If you need assistance, contact
-        <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a>.
-        See also: <a href="/account-deletion">Account Deletion</a>.
+        You can delete your account from within the app. If you cannot access the app, you can request deletion through the contact method listed on our <a href="/account-deletion">Account Deletion</a> page.
     </p>
+    <ul>
+        <li>When your account is deleted, we intend to delete your account data and associated records stored in our systems, including receipts, items, support chat records, support attachments, settings, search history, and related logs tied to your account.</li>
+        <li>Some limited records may be retained where reasonably necessary for legal compliance, security, fraud prevention, abuse prevention, or trial-enforcement purposes.</li>
+        <li>For example, we may retain limited device-level anti-abuse or trial-enforcement records, such as records associated with a device identifier used to prevent repeated abuse of free trial access.</li>
+        <li>Transaction, billing, and subscription records may also be retained by Apple, Google, RevenueCat, or other parties where required by their systems, contracts, or legal obligations.</li>
+    </ul>
 
     <h2>12) Security</h2>
     <p>
-        We use reasonable technical and organizational measures to protect your data. However, no system can be 100% secure.
+        We use reasonable technical and organizational measures to protect your data. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.
     </p>
 
-    <h2>13) Children</h2>
-    <p>Numo is not intended for children. Please do not use Numo if you are under the minimum age required in your country.</p>
-
-    <h2>14) Changes to this policy</h2>
+    <h2>13) International processing</h2>
     <p>
-        We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new “Last updated” date.
+        Because we use third-party infrastructure and service providers, your data may be processed in countries other than your own, subject to the operational practices of those providers and applicable law.
+    </p>
+
+    <h2>14) Children</h2>
+    <p>
+        Numo is not intended for children. Do not use Numo if you are under the minimum age required to use the service in your country.
+    </p>
+
+    <h2>15) Changes to this policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. When we do, we will post the updated version on this page and update the “Last updated” date.
     </p>
 
     <div class="card">
         <p class="muted">
-            Quick links: <a href="/terms">Terms</a> · <a href="/support">Support</a> · <a href="/account-deletion">Account Deletion</a>
+            Quick links:
+            <a href="/terms">Terms</a> ·
+            <a href="/support">Support</a> ·
+            <a href="/account-deletion">Account Deletion</a>
         </p>
     </div>
 </div>
