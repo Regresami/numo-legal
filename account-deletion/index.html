@@ -3,122 +3,377 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Numo — Account & Data Deletion</title>
+
+    <title>
+        Delete Your Numo — Smart Receipt Scanner Account
+    </title>
+
+    <meta
+            name="description"
+            content="Request deletion of your Numo — Smart Receipt Scanner account and associated data."
+    />
+
     <style>
         :root {
             --brand: #FF7F50;
             --brand-pressed: #F2683A;
             --brand-shadow: rgba(255, 127, 80, 0.15);
+
             --bg: #D6DBD2;
             --surface: #FFFFFF;
             --header: #E6EAE4;
             --badge: #E6E3DC;
+
             --text: #2F2F2F;
             --text-sub: #3D3D3D;
             --text-secondary: #4B4B4B;
             --muted: #6A6A6A;
-            --border: rgba(0,0,0,0.06);
-            --divider: rgba(0,0,0,0.08);
+
+            --border: rgba(0, 0, 0, 0.06);
+            --divider: rgba(0, 0, 0, 0.08);
         }
+
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg: #262624;
                 --surface: #30302E;
                 --header: #3D3D3B;
                 --badge: #3D3D3B;
+
                 --text: #F5F5F5;
                 --text-sub: #D2D2CE;
                 --text-secondary: #AFAEA8;
                 --muted: #7A7975;
-                --border: rgba(255,255,255,0.06);
-                --divider: rgba(255,255,255,0.10);
+
+                --border: rgba(255, 255, 255, 0.06);
+                --divider: rgba(255, 255, 255, 0.10);
+
                 --brand-shadow: rgba(255, 127, 80, 0.15);
             }
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: var(--bg); color: var(--text); }
-        .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        a { color: var(--brand); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .top { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-        .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--badge); border: 1px solid var(--border); font-size: 12px; color: var(--text-secondary); }
-        h1 { margin: 14px 0 8px; font-size: 28px; color: var(--text); }
-        h2 { margin-top: 28px; font-size: 20px; color: var(--text-sub); }
-        p, li { line-height: 1.65; color: var(--text-secondary); }
-        ul, ol { padding-left: 20px; }
-        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; margin-top: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
-        .button { display: inline-block; margin-top: 14px; padding: 12px 22px; background: var(--brand); color: #ffffff; border-radius: 10px; font-weight: 600; text-decoration: none; box-shadow: 0 10px 24px var(--brand-shadow); }
-        .button:hover { background: var(--brand-pressed); text-decoration: none; }
-        .muted { color: var(--muted); font-size: 14px; margin-top: 18px; }
+
+        body {
+            font-family:
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    Arial,
+                    sans-serif;
+
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .top {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--badge);
+            border: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        h1 {
+            margin: 14px 0 8px;
+            font-size: 28px;
+            color: var(--text);
+        }
+
+        h2 {
+            margin-top: 28px;
+            font-size: 20px;
+            color: var(--text-sub);
+        }
+
+        p,
+        li {
+            line-height: 1.65;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 18px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .app-details p {
+            margin: 8px 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 22px;
+            background: var(--brand);
+            color: #FFFFFF;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 24px var(--brand-shadow);
+        }
+
+        .button:hover {
+            background: var(--brand-pressed);
+            text-decoration: none;
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 18px;
+        }
     </style>
 </head>
+
 <body>
 <div class="wrap">
+
     <div class="top">
         <a href="/">← Back</a>
         <span class="badge">Last updated: 2026-07-18</span>
     </div>
 
-    <h1>Account & Data Deletion</h1>
-    <p>This page explains how you can request deletion of your Numo account and associated data.</p>
+    <h1>
+        Delete Your Numo — Smart Receipt Scanner Account
+    </h1>
 
-    <div class="card">
-        <h2>Delete Your Account in the App</h2>
-        <ol>
-            <li>Open the Numo app.</li>
-            <li>Sign in to the account you want to delete.</li>
-            <li>Go to <strong>Settings</strong>.</li>
-            <li>Select <strong>Delete Account</strong>.</li>
-            <li>Confirm the deletion request.</li>
-        </ol>
-        <p>This is the primary and fastest way to delete your Numo account and associated data.</p>
+    <p>
+        This page allows users of Numo — Smart Receipt Scanner to
+        request deletion of their Numo account and associated data.
+    </p>
+
+    <div class="card app-details">
+        <p>
+            <strong>App:</strong>
+            Numo — Smart Receipt Scanner
+        </p>
+
+        <p>
+            <strong>Developer:</strong>
+            Artur Fedichkin
+        </p>
+
+        <p>
+            <strong>Contact:</strong>
+            <a href="mailto:numo.app.contact@gmail.com">
+                numo.app.contact@gmail.com
+            </a>
+        </p>
     </div>
 
     <div class="card">
-        <h2>Request Deletion Without Access to the App</h2>
-        <p>If you cannot access the app or cannot sign in, you may request account deletion by email using the contact method below.</p>
-        <a class="button" href="mailto:numo.app.contact@gmail.com?subject=Numo%20Account%20Deletion%20Request">Request Account Deletion</a>
-        <p>We aim to process verified deletion requests within 7 business days, although timing may vary if additional verification or legal retention review is required.</p>
-        <p class="muted">To help us verify account ownership, please send the request from the email address linked to your Numo account whenever possible. If your account was created anonymously or you no longer have access to the linked email, include any details that may help us identify your account.</p>
+        <h2>Request Account Deletion by Email</h2>
+
+        <p>
+            You can request deletion of your Numo account even if you
+            cannot access the app or sign in. Send your request using
+            the email button below.
+        </p>
+
+        <a
+                class="button"
+                href="mailto:numo.app.contact@gmail.com?subject=Numo%20Account%20Deletion%20Request"
+                aria-label="Request deletion of your Numo account"
+        >
+            Request Numo Account Deletion
+        </a>
+
+        <p>
+            You can also send the request directly to
+            <a href="mailto:numo.app.contact@gmail.com">
+                numo.app.contact@gmail.com
+            </a>.
+        </p>
+
+        <p>
+            We aim to process verified deletion requests within
+            7 business days. Processing may take longer if additional
+            account verification or legal retention review is required.
+        </p>
+
+        <p class="muted">
+            Whenever possible, send the request from the email address
+            linked to your Numo account. If your account was created
+            anonymously or you no longer have access to the linked email,
+            include any information that may help us identify the account.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Delete Your Account in the App</h2>
+
+        <ol>
+            <li>Open Numo — Smart Receipt Scanner.</li>
+            <li>Sign in to the account you want to delete.</li>
+            <li>Open <strong>Settings</strong>.</li>
+            <li>Select <strong>Delete Account</strong>.</li>
+            <li>Confirm the deletion request.</li>
+        </ol>
+
+        <p>
+            This is the primary and fastest way to delete your Numo
+            account and associated data.
+        </p>
     </div>
 
     <div class="card">
         <h2>What Is Deleted</h2>
-        <p>When your account deletion request is completed, we intend to delete the account data associated with your Numo account from our systems, including:</p>
+
+        <p>
+            When your account deletion request is completed, we intend
+            to delete the account data associated with your Numo account
+            from our systems, including:
+        </p>
+
         <ul>
-            <li>account records stored in our backend, including basic profile information received from authentication providers where available;</li>
-            <li>authentication-related records associated with your Numo account;</li>
-            <li>expense and income records;</li>
-            <li>receipt entries, uploaded receipt images, recognized items, and related metadata;</li>
-            <li>nutrition estimates, nutrient classifications, grocery basket scores, nutrient signals, and related derived records associated with your receipts and account;</li>
-            <li>search history and AI-processing usage logs linked to your account;</li>
-            <li>support chat threads, support messages, and support attachments associated with your account;</li>
-            <li>user settings and user-specific category/subcategory customization records.</li>
+            <li>
+                account records stored in our backend, including basic
+                profile information received from authentication
+                providers where available;
+            </li>
+
+            <li>
+                authentication-related records associated with your
+                Numo account;
+            </li>
+
+            <li>
+                expense and income records;
+            </li>
+
+            <li>
+                receipt entries, uploaded receipt images, recognized
+                items, and related metadata;
+            </li>
+
+            <li>
+                nutrition estimates, nutrient classifications, grocery
+                basket scores, nutrient signals, and related derived
+                records associated with your receipts and account;
+            </li>
+
+            <li>
+                search history and AI-processing usage logs linked to
+                your account;
+            </li>
+
+            <li>
+                support chat threads, support messages, and support
+                attachments associated with your account;
+            </li>
+
+            <li>
+                user settings and user-specific category or subcategory
+                customization records.
+            </li>
         </ul>
     </div>
 
     <div class="card">
         <h2>What May Be Retained</h2>
-        <p>Some limited information may be retained where reasonably necessary for legal compliance, security, fraud prevention, abuse prevention, or enforcement of limited trial access.</p>
+
+        <p>
+            Some limited information may be retained where reasonably
+            necessary for legal compliance, security, fraud prevention,
+            abuse prevention, or enforcement of limited trial access.
+        </p>
+
         <ul>
-            <li>For example, we may retain limited device-level anti-abuse or trial-enforcement records, such as records associated with a device identifier used to prevent repeated abuse of free trial access.</li>
-            <li>Billing, subscription, and transaction records may also be retained by Apple, Google Play, RevenueCat, or other parties to the extent required by their systems, contracts, or applicable law.</li>
+            <li>
+                We may retain limited device-level anti-abuse or
+                trial-enforcement records, such as records associated
+                with a device identifier used to prevent repeated abuse
+                of free trial access.
+            </li>
+
+            <li>
+                Billing, subscription, and transaction records may also
+                be retained by Apple, Google Play, RevenueCat, or other
+                parties to the extent required by their systems,
+                contracts, or applicable law.
+            </li>
         </ul>
     </div>
 
     <div class="card">
         <h2>Important Notes</h2>
+
         <ul>
-            <li>Deleting your Numo account is intended to permanently remove your Numo account data from our systems, except for limited data retained for the reasons described above.</li>
-            <li>If you use Sign in with Apple, Sign in with Google, email/password, or an account that was later linked to those methods, the deletion request applies to the Numo account and associated Numo data rather than only to one login method.</li>
-            <li>If you created an anonymous account and later linked it to another sign-in method, deletion applies to that linked Numo account and associated data.</li>
+            <li>
+                Deleting your Numo account is intended to permanently
+                remove your Numo account data from our systems, except
+                for limited data retained for the reasons described above.
+            </li>
+
+            <li>
+                If you use Sign in with Apple, Sign in with Google,
+                email and password, or an account later linked to one of
+                those methods, the deletion request applies to the Numo
+                account and its associated data, not only to one login
+                method.
+            </li>
+
+            <li>
+                If you created an anonymous account and later linked it
+                to another sign-in method, deletion applies to that linked
+                Numo account and associated data.
+            </li>
         </ul>
     </div>
 
     <div class="card">
-        <p class="muted">Quick links: <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a></p>
+        <p class="muted">
+            Quick links:
+            <a href="/privacy">Privacy Policy</a> ·
+            <a href="/terms">Terms of Use</a> ·
+            <a href="/support">Support</a>
+        </p>
     </div>
 
-    <p class="muted">App: Numo<br>Contact: <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
+    <p class="muted">
+        App: Numo — Smart Receipt Scanner<br />
+        Developer: Artur Fedichkin<br />
+        Contact:
+        <a href="mailto:numo.app.contact@gmail.com">
+            numo.app.contact@gmail.com
+        </a>
+    </p>
+
 </div>
 </body>
 </html>
