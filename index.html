@@ -9,122 +9,55 @@
             --brand: #FF7F50;
             --brand-pressed: #F2683A;
             --brand-shadow: rgba(255, 127, 80, 0.15);
-
             --bg: #D6DBD2;
             --surface: #FFFFFF;
             --header: #E6EAE4;
             --badge: #E6E3DC;
-
             --text: #2F2F2F;
             --text-sub: #3D3D3D;
             --text-secondary: #4B4B4B;
             --muted: #6A6A6A;
-
             --border: rgba(0,0,0,0.06);
             --divider: rgba(0,0,0,0.08);
         }
-
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg: #262624;
                 --surface: #30302E;
                 --header: #3D3D3B;
                 --badge: #3D3D3B;
-
                 --text: #F5F5F5;
                 --text-sub: #D2D2CE;
                 --text-secondary: #AFAEA8;
                 --muted: #7A7975;
-
                 --border: rgba(255,255,255,0.06);
                 --divider: rgba(255,255,255,0.10);
-
                 --brand-shadow: rgba(255, 127, 80, 0.15);
             }
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
             margin: 0;
             background: var(--bg);
             color: var(--text);
         }
-
-        .wrap {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        a {
-            color: var(--brand);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .top {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 6px 10px;
-            border-radius: 999px;
-            background: var(--badge);
-            border: 1px solid var(--border);
-            font-size: 12px;
-            color: var(--text-secondary);
-        }
-
-        h1 {
-            margin: 14px 0 8px;
-            font-size: 28px;
-            color: var(--text);
-        }
-
-        p, li {
-            line-height: 1.65;
-            color: var(--text-secondary);
-        }
-
-        ul {
-            padding-left: 20px;
-            margin: 0;
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 18px;
-            margin-top: 16px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-        }
-
-        .muted {
-            color: var(--muted);
-            font-size: 13px;
-        }
+        .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        a { color: var(--brand); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .top { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+        .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: var(--badge); border: 1px solid var(--border); font-size: 12px; color: var(--text-secondary); }
+        h1 { margin: 14px 0 8px; font-size: 28px; color: var(--text); }
+        p, li { line-height: 1.65; color: var(--text-secondary); }
+        ul { padding-left: 20px; margin: 0; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-top: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .muted { color: var(--muted); font-size: 13px; }
     </style>
 </head>
 <body>
 <div class="wrap">
-    <div class="top">
-        <span class="badge">Numo</span>
-    </div>
-
+    <div class="top"><span class="badge">Numo</span></div>
     <h1>Legal & Support</h1>
-    <p>
-        This page provides legal, privacy, account deletion, and support information for the Numo mobile application.
-    </p>
-
+    <p>This page provides legal, privacy, account deletion, and support information for the Numo mobile application.</p>
     <div class="card">
         <ul>
             <li><a href="/privacy">Privacy Policy</a></li>
@@ -133,13 +66,10 @@
             <li><a href="/account-deletion">Account &amp; Data Deletion</a></li>
         </ul>
     </div>
-
     <div class="card">
         <p><strong>Owner:</strong> Artur Fedichkin</p>
         <p><strong>Contact:</strong> <a href="mailto:numo.app.contact@gmail.com">numo.app.contact@gmail.com</a></p>
-        <p class="muted">
-            Numo is a personal expense and spending tracking app with optional receipt scanning, AI-assisted processing, and subscription features.
-        </p>
+        <p class="muted">Numo is a smart receipt scanner and personal spending app with AI-assisted item extraction, automatic categorization, approximate nutrition information, grocery basket insights, and subscription features.</p>
     </div>
 </div>
 </body>
